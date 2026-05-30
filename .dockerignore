@@ -3,4 +3,5 @@ var
 .env
 .env.local
 .env.*.local
+
 .idea
