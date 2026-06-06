@@ -1,6 +1,6 @@
 # Symfony + Mailexam
 
-Minimal [Symfony](https://symfony.com/) example that sends test mail through [Mailexam](https://mailexam.ru/) SMTP via [Symfony Mailer](https://symfony.com/doc/current/mailer.html).
+Minimal [Symfony](https://symfony.com/) example that sends test mail through [Mailexam](https://mailexam.io/) SMTP via [Symfony Mailer](https://symfony.com/doc/current/mailer.html).
 
 Based on the [Mailexam Symfony guide](https://wiki.mailexam.ru/en/examples/symfony/).
 
@@ -15,7 +15,7 @@ From your Mailexam welcome email or dashboard:
 |----------|-------------|
 | `MAILEXAM_LOGIN` | SMTP login (for example, `xxxxx`) |
 | `MAILEXAM_PASSWORD` | SMTP password (paired with the login) |
-| Host | `{MAILEXAM_LOGIN}.mailexam.ru` (used in `MAILER_DSN`) |
+| Host | `{MAILEXAM_LOGIN}.mailexam.io` (used in `MAILER_DSN`) |
 
 ## Quick start (host)
 
@@ -40,7 +40,7 @@ MAILEXAM_PASSWORD=YOUR_PASSWORD
 MAILEXAM_PORT=587
 MAIL_FROM=noreply@example.test
 
-MAILER_DSN=smtp://${MAILEXAM_LOGIN}:${MAILEXAM_PASSWORD}@${MAILEXAM_LOGIN}.mailexam.ru:${MAILEXAM_PORT}
+MAILER_DSN=smtp://${MAILEXAM_LOGIN}:${MAILEXAM_PASSWORD}@${MAILEXAM_LOGIN}.mailexam.io:${MAILEXAM_PORT}
 ```
 
 4. Run the server:
@@ -121,10 +121,10 @@ variables:
   MAILEXAM_PASSWORD: $MAILEXAM_PASSWORD
   MAILEXAM_PORT: "587"
   MAIL_FROM: "noreply@example.test"
-  MAILER_DSN: "smtp://${MAILEXAM_LOGIN}:${MAILEXAM_PASSWORD}@${MAILEXAM_LOGIN}.mailexam.ru:587"
+  MAILER_DSN: "smtp://${MAILEXAM_LOGIN}:${MAILEXAM_PASSWORD}@${MAILEXAM_LOGIN}.mailexam.io:587"
 ```
 
-After sending a message in a test, verify delivery via the [Mailexam API](https://mailexam.ru/api).
+After sending a message in a test, verify delivery via the [Mailexam API](https://mailexam.io/api).
 
 For unit tests without real sending, use `null://null` as the mailer DSN in the test environment.
 
@@ -132,7 +132,7 @@ For unit tests without real sending, use `null://null` as the mailer DSN in the 
 
 **Authentication failed / connection refused**
 
-- Check `MAILER_DSN`: host `{login}.mailexam.ru`, login and password must be a pair from the same Mailexam project.
+- Check `MAILER_DSN`: host `{login}.mailexam.io`, login and password must be a pair from the same Mailexam project.
 
 **Error due to characters in password**
 
@@ -151,4 +151,4 @@ For unit tests without real sending, use `null://null` as the mailer DSN in the 
 - [Mailexam Symfony guide (wiki)](https://wiki.mailexam.ru/en/examples/symfony/)
 - [Laravel](https://github.com/mailexam/Laravel) and [Yii](https://github.com/mailexam/Yii) — other PHP frameworks
 - [Symfony Mailer documentation](https://symfony.com/doc/current/mailer.html)
-- [Mailexam API documentation](https://mailexam.ru/api)
+- [Mailexam API documentation](https://mailexam.io/api)
