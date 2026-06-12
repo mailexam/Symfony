@@ -152,3 +152,7 @@ For unit tests without real sending, use `null://null` as the mailer DSN in the 
 - [Laravel](https://github.com/mailexam/Laravel) and [Yii](https://github.com/mailexam/Yii) — other PHP frameworks
 - [Symfony Mailer documentation](https://symfony.com/doc/current/mailer.html)
 - [Mailexam API documentation](https://mailexam.io/api)
+
+## License
+
+Apache 2.0
