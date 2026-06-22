@@ -149,6 +149,7 @@ For unit tests without real sending, use `null://null` as the mailer DSN in the 
 ## See also
 
 - [Mailexam Symfony guide (wiki)](https://wiki.mailexam.ru/en/examples/symfony/)
+- [Magento reference implementation](https://github.com/mailexam/Magento) — e-commerce platform with custom SMTP module
 - [Laravel](https://github.com/mailexam/Laravel) and [Yii](https://github.com/mailexam/Yii) — other PHP frameworks
 - [Symfony Mailer documentation](https://symfony.com/doc/current/mailer.html)
 - [Mailexam API documentation](https://mailexam.io/api)
